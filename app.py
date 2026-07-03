@@ -13,7 +13,7 @@ st.title("🌱 Dry Bean Cluster Predictor")
 st.write("Enter the bean measurements below and click Predict.")
 
 # ---------------- LOAD FILES ----------------
-model = pickle.load(open("k_meansmodel.pkl", "rb"))
+model = pickle.load(open("kmeans_model.pkl", "rb"))
 scaler = pickle.load(open("scaler.pkl", "rb"))
 columns = pickle.load(open("columns.pkl", "rb"))
 
