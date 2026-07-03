@@ -21,25 +21,24 @@ columns = pickle.load(open("columns.pkl", "rb"))
 col1, col2 = st.columns(2)
 
 with col1:
-    area = st.number_input("Area", min_value=0.0)
-    perimeter = st.number_input("Perimeter", min_value=0.0)
-    major = st.number_input("MajorAxisLength", min_value=0.0)
-    minor = st.number_input("MinorAxisLength", min_value=0.0)
-    aspect = st.number_input("AspectRation", min_value=0.0)
-    eccentricity = st.number_input("Eccentricity", min_value=0.0)
-    convex = st.number_input("ConvexArea", min_value=0.0)
-    equiv = st.number_input("EquivDiameter", min_value=0.0)
+    area = st.number_input("Area", value=28395.0)
+    perimeter = st.number_input("Perimeter", value=610.291)
+    major = st.number_input("MajorAxisLength", value=208.1781167)
+    minor = st.number_input("MinorAxisLength", value=173.888747)
+    aspect = st.number_input("AspectRation", value=1.197191424)
+    eccentricity = st.number_input("Eccentricity", value=0.5498121871)
+    convex = st.number_input("ConvexArea", value=28715.0)
+    equiv = st.number_input("EquivDiameter", value=190.1410973)
 
 with col2:
-    extent = st.number_input("Extent", min_value=0.0)
-    solidity = st.number_input("Solidity", min_value=0.0)
-    roundness = st.number_input("Roundness", min_value=0.0)
-    compactness = st.number_input("Compactness", min_value=0.0)
-    sf1 = st.number_input("ShapeFactor1", min_value=0.0)
-    sf2 = st.number_input("ShapeFactor2", min_value=0.0)
-    sf3 = st.number_input("ShapeFactor3", min_value=0.0)
-    sf4 = st.number_input("ShapeFactor4", min_value=0.0)
-
+    extent = st.number_input("Extent", value=0.7639225182)
+    solidity = st.number_input("Solidity", value=0.9888559986)
+    roundness = st.number_input("Roundness", value=0.9580271263)
+    compactness = st.number_input("Compactness", value=0.9133577548)
+    sf1 = st.number_input("ShapeFactor1", value=0.007331506135, format="%.10f")
+    sf2 = st.number_input("ShapeFactor2", value=0.003147289167, format="%.10f")
+    sf3 = st.number_input("ShapeFactor3", value=0.8342223882)
+    sf4 = st.number_input("ShapeFactor4", value=0.998723889)
 # ---------------- PREDICTION ----------------
 if st.button("Predict Cluster", use_container_width=True):
 
